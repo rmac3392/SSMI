@@ -138,11 +138,11 @@ nav .login-button:hover{
    margin-right: 100px;
    margin-bottom: 25px;
    border-radius: 12px;
-
+   background-color: #f3fefe;
+   border-style:outset;
 }
 
 .info:hover{
-    background-color: #f3fefe;
     box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
 }
 
