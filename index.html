@@ -4,11 +4,15 @@
         <title>SSMI</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     </head>
-    <header>
+    <body>
+    <header class="header">
         <!-- This contains the logo and the navigation links, login button, search bar -->
-    <div class="header">
+    <div class="image">
         <a href="index.html"><img src="/images/ssmi_logo.png" alt="Logo" class="logo-image"></a>
+    </div>
+    <div class="nav-links">
         <nav>
             <a href="">HOME</a>
             <a href="">ABOUT</a>
@@ -21,6 +25,94 @@
         </nav>
     </div>
     </header>
-    <body></body>
+    <!-------------------------------- Banner ------------------------------>
+    <main class="main">
+         <div class="banner-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="images/banner1.png" alt="SSMI Products" class="banner1">
+                    <div class="info">
+                        <h1>Live Life... Without Worries!</h1><br>
+                        <p>
+                            Your home and business sum up your goals and dreams for a better life. That's why their protection comes up on top of your priority list. We at SSMI,
+                            understand your need to ensure the safety of the people and things that matter
+                            most to you.
+                        </p>
+                        <div class="quote-btn">
+                            <input type="button" value="Request A Free Quote" class="btn"/>
+                        </div>
+                        
+                    </div>        
+                </div>
+                  <div class="swiper-slide"><img src="images/banner2.png" alt="Monitoring" class="banner2">
+                    <div class="info">
+                        <h1>Video Intervention Services</h1><br><br>
+                        <p>
+                            Don't Record Crime, Prevent It! SSMi integrates seamlessly with on-site video systems including video analytics and 
+                            presents the central monitoring station with the detailed alarm information.
+                        </p>
+                    </div>   
+                </div>
+                  <div class="swiper-slide"><img src="images/banner3.png" alt="Services" class="banner3">
+                    <div class="info">
+                        <h1>System Services</h1> <br>
+                        <h4>Home Security Services</h4>
+                        <p>
+                            Your house symbolizes hard work and security. This is your comfort zone that protects the live and possessions most dear to you.SSMI could watch over your house, and safeguard your loved ones and property even while you are sleeping or away from home. 
+                        </p>
+                        <br>
+                        <h4>Business Security Services</h4>
+                        <p>     
+                            Your Business- your own company, whether earning thousands or millions is the product of your hard work. It is the rewarding result of the risks that you boldly undertook even when you did not know what the future holds for your enterprise. 
+                        </p>
+                    </div>   
+                </div>
+                  <div class="swiper-slide"><img src="images/banner4.png" alt="New Products" class="banner4">
+                    <div class="info">
+                        <h1>New Products</h1><br>
+                        <h4>Active Guard/Track</h4>
+                        <p>
+                            The most advanced, first of its kind in the world, system for monitoring the time, place and results of the work of personnel.
+                        </p>
+                        <br>
+                        <h4>Callisto Wireless Alarm Panel</h4>
+                        <p>
+                            It features an extended functionality, which enables it to be used to implement access control systems and smart building systems.
+                        </p>
+                    </div>   
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </div> 
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+            loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+    </body>
     <footer></footer>
 </html>
