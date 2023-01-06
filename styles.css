@@ -411,3 +411,152 @@ body{
 .projects img{
     width: 1200px;
 }
+/*------------------ Products----------------- */
+.products{
+    text-align: center;
+    color: #092f44;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.prod-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products h1{
+    font-size: 40px;
+}
+
+.prod-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.prod-col img{
+    width: 100%;
+    display: block;
+    border: #092f44 3px solid;
+}
+
+.prod-layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s; 
+}
+
+.prod-layer:hover{
+    background: rgba(9,47,68,0.7);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    
+
+}
+
+.prod-layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prod-layer:hover h3{
+    bottom: 20%;
+    opacity: 1;
+}
+
+.this{
+    height: 320px;
+}
+
+.prod-layer a{
+    color: #092f44;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 4px;
+    border: #ffffff solid 2px;
+    font-weight: bold;
+}
+/* -------------------Careers---------------- */
+
+.careers{
+    background-color: #ffffff;
+    
+}
+
+.careers h1{
+    color: #092f44;
+    text-align: center;
+    font-size: 40px;
+}
+
+.careers h3,p{
+    text-align: center;
+    color: #092f44;
+}
+
+.careers h5{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+}
+
+ul{
+    list-style:disc;
+    list-style-position: inside;
+
+}
+
+.career-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.career-col{
+    flex-basis: 32%;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f3fefe;
+    padding: 3px;
+    border-radius: 10px;   
+}
+
+.career-col:hover{
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+}
+
+
+.form{
+    align-items: center;
+}
+
+fieldset{
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+input,label,select{
+    margin: 5px;
+}
