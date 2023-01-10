@@ -173,7 +173,7 @@ body{
 }
 
 .info:hover{
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
 }
 
 .btn{
@@ -230,7 +230,7 @@ body{
 
 .layer:hover{
     background: rgba(9,47,68,0.7);
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
 }
 
 .layer h3{
@@ -308,7 +308,7 @@ body{
 }
   
 .mvg-col:hover{
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
 }
 /* --------------------------------Services------------------------------ */
 .services-section{
@@ -363,7 +363,7 @@ body{
 
 .service-layer:hover{
     background: rgba(9,47,68,0.7);
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
     
 
 }
@@ -458,7 +458,7 @@ body{
 
 .prod-layer:hover{
     background: rgba(9,47,68,0.7);
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
     
 
 }
@@ -500,7 +500,7 @@ body{
 
 .careers{
     background-color: #ffffff;
-    
+    padding: 30px;
 }
 
 .careers h1{
@@ -543,20 +543,156 @@ ul{
 }
 
 .career-col:hover{
-    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
 }
-
 
 .form{
     align-items: center;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 fieldset{
-    width: 1000px;
+    width: 500px;
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
+    background-color: #f3fefe;
 }
 
+fieldset:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+legend{
+    font-weight: bolder;
+}
 input,label,select{
     margin: 5px;
+    border-radius: 5px;
+    
 }
+
+label{
+    font-weight:500;
+}
+
+input,select{
+    margin-left: 30px;
+    border: 0.5px solid grey;
+    height: 20px;
+    
+}
+
+.sub-btn{
+    text-align: center;
+}
+
+.submit{
+    height: 25px;
+    width: 70px;
+    margin-left: 0px;
+}
+
+.submit:hover{
+    background-color: #092f44;
+    color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+/* contact us */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.row{
+    display: flex;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col .fa{
+    font-size: 28px;
+    color: #092f44;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    
+}
+
+.contact-col h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1pxs solid #ccc;
+    box-sizing: border-box;
+}
+.h1con{
+     color: #092f44;
+    text-align: center;
+    font-size: 40px;
+}
+
+.message{
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.send-btn{
+   float: right;
+   margin-right: 180px;
+}
+
+.send{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.contact-col textarea:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+.contact-col input:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.send:hover{
+    background-color: #092f44;
+    color: #ffffff;
+     box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+

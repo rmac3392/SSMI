@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <header class="header">
@@ -368,26 +368,75 @@
         <form action="POST">
             <fieldset>
                 <legend>Application Form</legend>
-                <label for="name">Name: </label>
-                <input type="text" id="name" placeholder="e.g. Juan Dela Cruz"> <br>
-                <label for="gender">Gender: </label> 
+                <label for="name">Name: </label><br>
+                <input type="text" id="name" placeholder="e.g. Juan Dela Cruz" required> <br>
+                <label for="gender">Gender: </label><br> 
                 <input type="radio" name="gender" value="Male"> Male
                 <input type="radio" name="gender" value="Female"> Female<br> 
-                <label for="age" min="18" max="40">Age: </label>
-                <input type="number" id="age"><br>
-                <label for="work">Position</label>
-                <select id="work">
+                <label for="age" min="18" max="40" >Age: </label><br>
+                <input type="number" id="age" required><br>
+                <label for="work">Position</label><br>
+                <select id="work" required>
                     <option value="service technician">Service Technician</option>
                     <option value="installer">Installer</option>
                     <option value="cable man">Cable Man</option>
                     <option value="other">Other</option>
                 </select>
+                <br>
+                <label for="file">Attach Resume:</label><br>
+                <input type="file" name="file" required>
+                <br>
+                <div class="sub-btn">
+                    <input type="submit" name="submit" class="submit">
+                </div>
             </fieldset>
         </form>
     </div>
-
-
     </section>
+<!------------------Contact Us - -------------------->
+    <br><br><h1 class="h1con"><u>Contact Us</u></h1> 
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2694102048513!2d123.91902217397515!3d10.320311067443368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9990f15e7e9f1%3A0xbe1e6d274b3fd23f!2sSecurity%20and%20Systems%20Monitoring%2C%20Inc.!5e0!3m2!1sen!2sph!4v1673150197100!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                    <span>
+                        <h5>409-N Sanciangko st. Riverside Cebu City, 6000</h5>
+                        <p>Philippines,Cebu</p>
+                    </span>
+            </div>
+        
+        <div >
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>0910-375-1410</h5>
+                <p>Monday - Saturday,10AM to 6PM</p>
+            </span>
+        </div>
+        <div >
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>ryan@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+        </div>
+        </div>  
+<div class="contact-col">
+<form action="form-handler.php" method="post">
+<input type="text" name="name" placeholder="Enter your name" required>
+<input type="email" name="email" placeholder="Email address" required>
+<input type="text" name="subject" placeholder="Enter your subject" required>
+<textarea rows="8" name="message" placeholder="Message" required class="message"></textarea>
+<div class="send-btn">
+<button type="submit" class="send">Send Message</button>
+</div>
+</form>
+</div>
+</section>
 </body>
     <footer></footer>
 </html>
