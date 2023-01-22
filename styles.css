@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 /*------------------------ Header ---------------------------- */
 .header{
@@ -11,7 +11,105 @@
     height: 70px;
    
 }
+.fa-caret-down {
+    width: 10px;
+    height: 10px;
+    color: #fff;
+}
 
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    right: 45px;
+    color: #fff;
+    z-index: 7;
+ 
+}
+
+.login-form{
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    right: 9px;
+    top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
+    padding-top: 10px;
+    
+}
+
+
+
+.login-form h3{
+    color: #092f44;
+    margin-left: 98px;
+}
+
+.login-form .label{
+    margin-left: 30px;
+    font-size: small;
+    font-weight: bold;
+    color: #092f44;
+}
+
+
+.login-form .link{
+    position: absolute;
+    font-size: 12px;
+    right: 30px;
+    cursor: pointer;
+}
+.login-form .link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.user-ans{
+    width: 80%;
+    height: 35px;
+    font-size: medium;
+    border: 0;
+    border-bottom: #092f44 solid 1px;
+    border-top: 0;
+    outline: none;
+}
+
+.log-btn{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border:0;
+    color: #fff;
+    background-color: #092f44;
+}
+
+.login-form p .sign:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.login-form p .sign{
+    color: #092f44;
+    font-size: small;
+}
+
+
+
+.login-form .signp{
+    padding: 5px;
+    font-size: small;
+}
+
+.log-btn:hover{
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.5);
+}
 .logo-image{
     width: 250px;
     float: left;
@@ -52,24 +150,7 @@ nav .link:hover::after{
     transform-origin: bottom left;
 }
 
-.login-button{
-    border-radius: 6px;
-    border: none;
-    border-color: #092f44;
-    background-color: #ffffff;
-    margin: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
-    color: #092f44;
-}
 
-nav .login-button:hover{
-    color: #ffffff;
-    background-color: #528aae;
-    transition: 0.5s;
-}
 
 /*------------------------ Banner ---------------------------- */
 

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
     <header class="header">
@@ -15,16 +16,53 @@
     </div>
     <div class="nav-links">
         <nav>
-            <a class="link" href="index.html">HOME</a>
-            <a class="link" href="#about">ABOUT</a>
-            <a class="link" href="#services">SERVICES</a>
-            <a class="link" href="#projects">PROJECTS</a>
-            <a class="link" href="#prod">PRODUCTS</a>
-            <a class="link" href="#car">CAREERS</a>
-            <a class="link" href="#con">CONTACT US</a>
-            <a href="" class="login-button">LOGIN</a>
+            <div class="menu-content">
+                <a class="link" href="index.html">HOME</a>
+                <a class="link" href="#about">ABOUT</a>
+                <a class="link" href="#services">SERVICES</a>
+                <a class="link" href="#projects">PROJECTS</a>
+                <a class="link" href="#prod">PRODUCTS</a>
+                <a class="link" href="#car">CAREERS</a>
+                <a class="link" href="#con">CONTACT US</a>
+                <a href="" class="link" id="login">LOGIN <i class="fa fa-caret-down" aria-hidden="true" ></i></a>    
+            </div>
+        <div class="arrow-up" ></div>                                        
         </nav>
+        <div class="login-form">
+            <form action="">
+                <br>
+                <h3>USER LOGIN</h3>
+                <label class="label" for="username">Username: </label><br>
+                <input type="text" class="user-ans" placeholder="Type username" required><br>
+                <label class="label" for="password">Password:</label>
+                <input type="password" class="user-ans" placeholder="Type password" required>
+                <p class="link">Forget password?</p><br><br>
+                <button class="log-btn">Log In</button>
+                <p class="signp">No account yet? <a href="" class="sign">Sign up</a></p>
+            </form>
+        </div>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var arrow = $(".arrow-up");
+            var form = $(".login-form");
+            var status = false;
+            $("#login").click(function(event){
+                event.preventDefault();
+                if(status == false){
+                    arrow.fadeIn();
+                    form.fadeIn();
+                    status = true;
+                }
+                else{
+                    arrow.fadeOut();
+                    form.fadeOut();
+                    status = false;
+                }
+            })
+        })
+    </script>
     </header>
     <!-------------------------------- Banner ------------------------------>
     <main class="main">
