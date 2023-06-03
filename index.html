@@ -12,7 +12,7 @@
     <header class="header">
         <!-- This contains the logo and the navigation links, login button, search bar -->
     <div class="image">
-        <a href="index.html"><img src="/images/ssmi_logo.png" alt="Logo" class="logo-image"></a>
+        <a href="index.html"><img src="images/ssmi_logo.png" alt="Logo" class="logo-image"></a>
     </div>
     <div class="nav-links">
         <nav>
@@ -48,16 +48,18 @@
             var arrow = $(".arrow-up");
             var form = $(".login-form");
             var status = false;
+            arrow.fadeOut();
+            form.fadeOut();  
             $("#login").click(function(event){
                 event.preventDefault();
                 if(status == false){
-                    arrow.fadeIn();
-                    form.fadeIn();
+                    arrow.fadeOut();
+                    form.fadeOut();                   
                     status = true;
                 }
                 else{
-                    arrow.fadeOut();
-                    form.fadeOut();
+                    arrow.fadeIn();
+                    form.fadeIn();
                     status = false;
                 }
             })
